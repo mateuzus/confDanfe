@@ -1,0 +1,7 @@
+{
+  "name": "confDanfe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
