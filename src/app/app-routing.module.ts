@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'fisica',
     loadChildren: () => import('./fisica/fisica.module').then( m => m.FisicaPageModule)
+  },
+  {
+    path: 'localizacao',
+    loadChildren: () => import('./localizacao/localizacao.module').then( m => m.LocalizacaoPageModule)
   }
 ];
 
