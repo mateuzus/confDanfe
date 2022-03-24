@@ -8,27 +8,26 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class DanfePage implements OnInit {
 
+  form: FormGroup;
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      numero: ['', [Validators.required]],
+      danfe: ['', [Validators.required]],
+      cnpj: [''],
+      razao: [''],
+      modelo: [''],
+      serie: [''],
+      numero: [''],
+      emissao: [''],
+      data: [''],
+      entradaSaida: [''],
+      valorTotal: [''],
       numeroNota: [''],
       items: [''],
       itemsEmb: ['']
     });
-  }
-
-  // eslint-disable-next-line @typescript-eslint/member-ordering
-  form: FormGroup;
-
-  doRefresh(event) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      event.target.complete();
-    }, 2000);
   }
 }
 
