@@ -12,10 +12,23 @@ export class DanfePage implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      numero: ['', [Validators.required]]
+      numero: ['', [Validators.required]],
+      numeroNota: [''],
+      items: [''],
+      itemsEmb: ['']
     });
   }
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   form: FormGroup;
+
+  doRefresh(event) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
 }
+

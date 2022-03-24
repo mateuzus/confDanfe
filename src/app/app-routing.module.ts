@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'danfe',
     loadChildren: () => import('./danfe/danfe.module').then( m => m.DanfePageModule)
+  },
+  {
+    path: 'fisica',
+    loadChildren: () => import('./fisica/fisica.module').then( m => m.FisicaPageModule)
   }
 ];
 
