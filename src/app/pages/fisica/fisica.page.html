@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Consulta Física de Material</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="formulario" action="" [formGroup]="form">
+    <ion-item>
+      <ion-label position="floating">Etiqueta do Material</ion-label>
+      <ion-input type="text" formControlName="etiqueta"></ion-input>
+    </ion-item>
+
+    <div class="row linha">
+      <ion-item class="col-6">
+        <ion-label position="floating">Item</ion-label>
+        <ion-input type="text" readonly="true"></ion-input>
+      </ion-item>
+
+      <ion-item class="col-6">
+        <ion-label  position="floating">Descrição</ion-label>
+        <ion-input type="text" readonly="true"></ion-input>
+      </ion-item>
+    </div>
+
+
+
+    <table class="table table-dark tabela">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Seq</th>
+          <th scope="col">Lote</th>
+          <th scope="col">Emb</th>
+          <th scope="col">Qtd p/ Emb</th>
+          <th scope="col">Sigla Emb</th>
+          <th scope="col">Und</th>
+          <th scope="col">Qtd</th>
+          <th scope="col">Conf</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td><ion-checkbox></ion-checkbox></td>
+        </tr>
+      </tbody>
+    </table>
+    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/danfe']">Anterior</ion-button>
+    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/localizacao']">Próximo</ion-button>
+  </form>
+
+</ion-content>

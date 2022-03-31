@@ -12,21 +12,13 @@
     </ion-item>
 
     <div class="row linha">
-      <ion-item class="col-6">
-        <ion-label position="floating">CNPJ</ion-label>
-        <ion-input type="text" formControlName="cnpj" readonly="true"></ion-input>
-      </ion-item>
-      <ion-item class="col-6">
+      <ion-item class="col-12">
         <ion-label position="floating">Razão Social</ion-label>
         <ion-input type="text" formControlName="razao" readonly="true"></ion-input>
       </ion-item>
     </div>
 
     <div class="row linha">
-      <ion-item class="col-4">
-        <ion-label position="floating">Modelo</ion-label>
-        <ion-input type="text" formControlName="modelo"></ion-input>
-      </ion-item>
       <ion-item class="col-4">
         <ion-label position="floating">Série</ion-label>
         <ion-input type="text" formControlName="serie"></ion-input>
@@ -35,29 +27,23 @@
         <ion-label position="floating">Número</ion-label>
         <ion-input type="text" formControlName="numero"></ion-input>
       </ion-item>
-    </div>
-    <div class="row linha">
       <ion-item class="col-4">
-        <ion-label position="floating">Data Emissão</ion-label>
+        <ion-label position="floating">Dt Emissão</ion-label>
         <ion-input type="text" formControlName="emissao"></ion-input>
       </ion-item>
+    </div>
+    <div class="row linha">
+
       <ion-item class="col-4">
-        <ion-label position="floating">Data Entrada/Saída</ion-label>
+        <ion-label position="floating">Dt Ent/Saída</ion-label>
         <ion-input type="text" formControlName="entradaSaida"></ion-input>
       </ion-item>
       <ion-item class="col-4">
-        <ion-label position="floating">Val. Total</ion-label>
-        <ion-input type="text" formControlName="valorTotal"></ion-input>
-      </ion-item>
-    </div>
-
-    <div class="row linha">
-      <ion-item class="col-6">
-        <ion-label position="floating">Número da Nota</ion-label>
+        <ion-label position="floating">Nmr NF</ion-label>
         <ion-input type="text" formControlName="numeroNota" readonly="true"></ion-input>
       </ion-item>
-      <ion-item class="col-6">
-        <ion-label position="floating">Número da Embalagem</ion-label>
+      <ion-item class="col-4">
+        <ion-label position="floating">Nmr Emb</ion-label>
         <ion-input type="text" formControlName="itemsEmb" readonly="true"></ion-input>
       </ion-item>
     </div>
@@ -65,19 +51,19 @@
     <table class="table table-dark tabela">
       <thead>
         <tr>
+          <th scope="col"></th>
           <th scope="col">Seq</th>
           <th scope="col">Item</th>
-          <th scope="col">Lote</th>
-          <th scope="col">Und. Medida</th>
-          <th scope="col">Num. Unidades</th>
+          <th scope="col">Und Medida</th>
+          <th scope="col">Num Und</th>
           <th scope="col">Qtd</th>
-          <th scope="col">Descrição</th>
+          <th scope="col">Desc</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">123</th>
-          <td>123</td>
+          <th scope="row"><ion-checkbox></ion-checkbox></th>
+          <td>12</td>
           <td>456</td>
           <td>PC</td>
           <td>3</td>
@@ -87,7 +73,7 @@
       </tbody>
     </table>
 
-    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/fisica']">Próximo</ion-button>
+    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/fisica']">Confirmar</ion-button>
   </form>
 
 
