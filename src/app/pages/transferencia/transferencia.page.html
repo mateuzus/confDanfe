@@ -41,17 +41,17 @@
     <div class="row dep-loc">
       <ion-item class="col-6">
         <ion-label position="floating">Dep</ion-label>
-        <ion-input type="text" readonly="true"></ion-input>
+        <ion-input type="text" required="true"></ion-input>
       </ion-item>
 
       <ion-item class=" col-6">
         <ion-label position="floating">Loc</ion-label>
-        <ion-input type="text" readonly="true"></ion-input>
+        <ion-input type="text"></ion-input>
       </ion-item>
     </div>
 
 
     <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/localizacao']">Voltar</ion-button>
-    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/material-info']">Transferir</ion-button>
+    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/fifo']">Transferir</ion-button>
   </div>
 </ion-content>

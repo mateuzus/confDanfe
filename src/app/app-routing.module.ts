@@ -31,6 +31,18 @@ const routes: Routes = [
     path: 'transferencia',
     loadChildren: () => import('./pages/transferencia/transferencia.module').then( m => m.TransferenciaPageModule)
   },
+  {
+    path: 'fifo',
+    loadChildren: () => import('./pages/fifo/fifo.module').then( m => m.FifoPageModule)
+  },
+  {
+    path: 'ret-parcial',
+    loadChildren: () => import('./pages/ret-parcial/ret-parcial.module').then( m => m.RetParcialPageModule)
+  },
+  {
+    path: 'devo-mat',
+    loadChildren: () => import('./pages/devo-mat/devo-mat.module').then( m => m.DevoMatPageModule)
+  },
 ];
 
 @NgModule({
