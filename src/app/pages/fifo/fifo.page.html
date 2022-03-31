@@ -1,9 +1,82 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>fifo</ion-title>
+    <ion-title>Saída PRO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="row linha">
+    <ion-item>
+      <ion-label position="floating">Etiqueta do item</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </div>
 
+  <div class="row linha">
+    <ion-item class="col-6">
+      <ion-label position="floating">Desc</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item class="col-6">
+      <ion-label position="floating">Und/Medida</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="row tabela">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Lote</th>
+          <th scope="col">Emb</th>
+          <th scope="col">Qtd</th>
+          <th scope="col">Peso</th>
+          <th scope="col">Dt Vl Lote</th>
+          <th scope="col">Dep</th>
+          <th scope="col">Loc</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">x</th>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row id-mat">
+    <ion-item class="col-12">
+      <ion-label position="floating">Id Mat Trans</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+  </div>
+
+  <div class="row linha">
+    <ion-item class="col-5">
+      <ion-label position="floating">Dep destino</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="col-3">
+      <ion-label position="floating">PRO</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-button class="col-3 checked">
+      <ion-icon name="checkmark"></ion-icon>
+    </ion-button>
+  </div>
+  <ion-button class="btn-anterior" color="tertiary" [routerLink]="['/transferencia']">Anterior</ion-button>
+    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/ret-parcial']">Próximo</ion-button>
 </ion-content>

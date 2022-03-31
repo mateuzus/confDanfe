@@ -11,7 +11,7 @@
   </ion-item>
 
   <div class="tabela">
-    <table class="table table-dark col-md-12 col-md-6">
+    <table class="table table-dark col-md-12">
       <thead>
         <tr>
           <th scope="col">Id</th>
@@ -40,9 +40,13 @@
           <th scope="row"></th>
         </tr>
       </tbody>
-    </table>
 
-    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/fisica']">Anterior</ion-button>
-    <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/material-info']">Próximo</ion-button>
+    </table>
   </div>
+      <ion-button class="btn-anterior" color="tertiary" [routerLink]="['/fisica']">Anterior</ion-button>
+      <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/material-info']">Próximo</ion-button>
+
+
+
+
 </ion-content>

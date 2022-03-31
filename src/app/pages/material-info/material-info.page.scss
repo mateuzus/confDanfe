@@ -1,8 +1,13 @@
 .tabela {
   margin: 20px;
   color: white;
+  overflow-x: auto;
 }
 
 .consulta {
   margin: 20px;
+}
+
+.btn-anterior {
+  margin-left: 20px;
 }

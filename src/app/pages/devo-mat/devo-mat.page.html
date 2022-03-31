@@ -1,9 +1,65 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>devo-mat</ion-title>
+    <ion-title>Devolução de Material</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item class="consulta">
+    <ion-label position="floating">Id do material</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
 
+  <div class="tabela">
+    <table class="table table-dark col-md-12 col-md-6">
+      <thead>
+        <tr>
+          <th scope="col">Qtd</th>
+          <th scope="col">Peso</th>
+          <th scope="col">Und</th>
+          <th scope="col">Item</th>
+          <th scope="col">Lote</th>
+          <th scope="col">Dep</th>
+          <th scope="col">Loc</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+          <th scope="row">x</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row und-peso">
+    <ion-item class="col-6">
+      <ion-label position="floating">Und</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="col-6">
+      <ion-label position="floating">Peso</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </div>
+  <div class="row und-peso">
+    <ion-item class="col-6">
+      <ion-label position="floating">Loc</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="col-6">
+      <ion-label position="floating">Dep</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </div>
+
+  <ion-button class="btn-voltar" color="tertiary" [routerLink]="['/ret-parcial']">Anterior</ion-button>
+      <ion-button class="btn-proximo" color="tertiary" [routerLink]="['/']">Próximo</ion-button>
 </ion-content>
